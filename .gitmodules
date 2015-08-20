@@ -1,0 +1,3 @@
+[submodule "Module"]
+	path = Module
+	url = https://sourcebits-konstantinos@github.com/sourcebits-konstantinos/SubModule.git
