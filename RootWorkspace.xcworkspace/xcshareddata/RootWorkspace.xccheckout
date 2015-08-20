@@ -12,6 +12,8 @@
 	<dict>
 		<key>AF490FFC143D587F3E73B30C19577CF0D216C088</key>
 		<string>https://github.com/sourcebits-konstantinos/SubmodulesTest.git</string>
+		<key>D7EEE788A49702273A24C5215362BA962FFF82F4</key>
+		<string>https://github.com/sourcebits-konstantinos/SubModule.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RootWorkspace.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>AF490FFC143D587F3E73B30C19577CF0D216C088</key>
 		<string>..</string>
+		<key>D7EEE788A49702273A24C5215362BA962FFF82F4</key>
+		<string>../Module/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sourcebits-konstantinos/SubmodulesTest.git</string>
@@ -28,6 +32,14 @@
 	<string>AF490FFC143D587F3E73B30C19577CF0D216C088</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D7EEE788A49702273A24C5215362BA962FFF82F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Module</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
