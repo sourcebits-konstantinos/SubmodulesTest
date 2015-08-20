@@ -14,7 +14,7 @@
 		7E09B3571B81E2DF00A6E1F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E09B3561B81E2DF00A6E1F3 /* Images.xcassets */; };
 		7E09B35A1B81E2DF00A6E1F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E09B3581B81E2DF00A6E1F3 /* LaunchScreen.xib */; };
 		7E09B3661B81E2DF00A6E1F3 /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E09B3651B81E2DF00A6E1F3 /* PlaygroundTests.m */; };
-		7ECA1F551B85D27A00697F79 /* PlaygroundFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA1F541B85D27A00697F79 /* PlaygroundFramework.framework */; };
+		7ECA1F5E1B85D3CB00697F79 /* PlaygroundFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECA1F5C1B85D3CB00697F79 /* PlaygroundFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +26,20 @@
 			remoteInfo = Playground;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7ECA1F5F1B85D3CB00697F79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ECA1F5E1B85D3CB00697F79 /* PlaygroundFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E09B3461B81E2DF00A6E1F3 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +56,7 @@
 		7E09B3641B81E2DF00A6E1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E09B3651B81E2DF00A6E1F3 /* PlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundTests.m; sourceTree = "<group>"; };
 		7E09B3701B81E5D600A6E1F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		7ECA1F541B85D27A00697F79 /* PlaygroundFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlaygroundFramework.framework; path = "../Module/PlaygroundFramework/build/Debug-iphoneos/PlaygroundFramework.framework"; sourceTree = "<group>"; };
+		7ECA1F5C1B85D3CB00697F79 /* PlaygroundFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = PlaygroundFramework.framework; path = "/Users/kostazz/Library/Developer/Xcode/DerivedData/RootWorkspace-crjbjyvjxffwkoaynqzwtxrpefpy/Build/Products/Debug-iphoneos/PlaygroundFramework.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECA1F551B85D27A00697F79 /* PlaygroundFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +80,7 @@
 		7E09B33D1B81E2DF00A6E1F3 = {
 			isa = PBXGroup;
 			children = (
-				7ECA1F541B85D27A00697F79 /* PlaygroundFramework.framework */,
+				7ECA1F5C1B85D3CB00697F79 /* PlaygroundFramework.framework */,
 				7E09B3481B81E2DF00A6E1F3 /* Playground */,
 				7E09B3621B81E2DF00A6E1F3 /* PlaygroundTests */,
 				7E09B3471B81E2DF00A6E1F3 /* Products */,
@@ -134,6 +147,7 @@
 				7E09B3421B81E2DF00A6E1F3 /* Sources */,
 				7E09B3431B81E2DF00A6E1F3 /* Frameworks */,
 				7E09B3441B81E2DF00A6E1F3 /* Resources */,
+				7ECA1F5F1B85D3CB00697F79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +372,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kostazz/Documents/Sourcebits/github/SubmodulesTest/Module/PlaygroundFramework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RootWorkspace-crjbjyvjxffwkoaynqzwtxrpefpy/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -372,6 +387,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/kostazz/Documents/Sourcebits/github/SubmodulesTest/Module/PlaygroundFramework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RootWorkspace-crjbjyvjxffwkoaynqzwtxrpefpy/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
